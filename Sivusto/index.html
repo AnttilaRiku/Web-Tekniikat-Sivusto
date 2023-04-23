@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web-tekniikat projekti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <!-- Secretbuttons -->
+  <body>
+    <button type="button" class="secretbtn">
+      <a href="./index.html">
+        <h3>Return</h3>
+    </button>
+    </a>
+    <button type="button" class="secretlink">
+      <a href="./pages/accordion.html">
+        <h3>About</h3>
+    </button>
+    </a>
+    <nav class="navbar navbar-dard bg-dark text-center">
+      <span class="navbar-text">
+        <h1>Which fighter will take the throne?</h1>
+      </span>
+      <div class="switch text-center">
+        <h2>Pull the switch for the truth</h2>
+        <label class="switch-toggle">
+          <input type="checkbox" id="colorswap">
+          <span class="switch-knob"></span>
+          <span class="switch-text"></span>
+        </label>
+      </div>
+    </nav>
+    </div>
+    <!-- Container -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-6">
+          <div class="card mb-6">
+            <a href="./pages/mayweather.html">
+              <img src="./img/Mayweather.JPG" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Floyd Mayweather Jr.</h5>
+              <p class="card-text"> He retired with an undefeated record and won 15 major world championships from super featherweight to light middleweight. This includes the Ring magazine title in five weight classes and the lineal championship in four weight classes (twice at welterweight). This guy is thirsty for <em>BLOOD</em>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-6">
+            <a href="./pages/mcgregor.html">
+              <img src="./img/McGregor.JPG" class="card-img-top" alt="...">
+              <div class="card-body">
+            </a>
+            <h5 class="card-title">Conor McGregor</h5>
+            <p class="card-text"> Conor Anthony McGregor is an Irish professional mixed martial artist. He is a former Ultimate Fighting Championship (UFC) featherweight and lightweight double-champion. He is the first UFC fighter to hold UFC championships in two weight classes simultaneously. This guy means <em>BUSINESS</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form -->
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <form id="message-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="important">
+            <label class="form-check-label" for="important">Important message</label>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Message History</h5>
+            <div id="message-history"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center ">
+      <div class="text-center p-1" style="background-color:#111"> © 2023 Copyright: Riku A, TIK23KM </div>
+    </footer>
+    <audio id="myAudio">
+      <source src="./img/12_cena.mp3" type="audio/mpeg">
+    </audio>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="./Js/scripts.js"></script>
+  </body>
+</html>

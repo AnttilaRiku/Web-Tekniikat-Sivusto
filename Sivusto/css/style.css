@@ -1,0 +1,339 @@
+/* general background*/
+
+.container,
+.navbar {
+  background-image: url("../img/tastelessboxingbackground.jpg");
+  background-size: cover;
+}
+
+body:not(.dark) {
+  background-color: #000;
+  background-image: url("../img/tastelessboxingbackground.jpg");
+  background-size: cover;
+}
+
+.secretbtn:not(.dark) {
+  display: none;
+}
+
+.secretlink:not(.dark) {
+  display: none;
+}
+
+/* font doodles*/
+
+h1 {
+  font-size: 72px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #111;
+  text-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod, 0 0 15px gold,
+    0 0 20px gold;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #111;
+  text-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod, 0 0 15px gold,
+    0 0 20px gold;
+}
+
+h3 {
+  font-size: 36px;
+  color: #111;
+  text-align: center;
+  text-shadow: 0px 0px 5px #ffd700;
+}
+/*Note to self: use again, looks actually really good.*/
+.card-text em {
+  font-size: 22px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #111;
+  text-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod, 0 0 15px gold,
+    0 0 20px gold;
+}
+
+.container {
+  color: goldenrod;
+}
+
+/* important message*/
+
+.important {
+  background-color: goldenrod;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  text-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod, 0 0 20px #f8d105;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px goldenrod, 0 0 10px gold;
+  }
+  to {
+    box-shadow: 0 0 10px goldenrod, 0 0 20px gold;
+  }
+}
+
+#message-history {
+  height: 300px;
+  color: gold;
+  padding: 10px;
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.col-md-6 .card {
+  margin-right: 15px;
+}
+
+.card-body {
+  font-size: 24px;
+  color: gold;
+  text-align: center;
+}
+/* Add animation on image hover */
+
+.card-img-top:hover {
+  animation: bounce 0.6s ease-out;
+  box-shadow: 0 0 20px goldenrod;
+  text-shadow: 0px 0px 5px #ffd700;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card-text {
+  font-size: 18px;
+  color: goldenrod;
+}
+
+.form-control,
+.card-body,
+.card,
+.message-history {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #ffd700;
+}
+
+.form-control:focus,
+#name:focus,
+#message:focus {
+  background-color: #111;
+  color: goldenrod;
+}
+
+label {
+  color: #ffd700;
+}
+
+.btn-primary {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+}
+
+/*Carousel*/
+
+.carousel-item img {
+  max-height: auto;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Accordion */
+.accordion {
+  --bs-accordion-bg: goldenrod;
+  --bs-accordion-color: #111;
+  --bs-accordion-border-color: #ffd700;
+  --bs-accordion-active-color: goldenrod;
+  --bs-accordion-active-bg: #111;
+}
+
+/* switch kikkailut */
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 1em;
+}
+
+.switch-knob {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.switch-toggle {
+  display: inline-block;
+  position: relative;
+  border: 2px solid black;
+  background-color: #ffd700;
+  border-radius: 20px;
+  width: 50px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.switch-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.switch-toggle .switch-knob {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.switch-toggle .switch-text {
+  display: none;
+}
+
+.switch-toggle input:checked + .switch-knob {
+  background-color: black;
+  left: calc(100% - 20px);
+}
+
+.switch-toggle input:focus + .switch-knob {
+  box-shadow: 0 0 1px #ffb870;
+}
+
+.switch-toggle input:checked + .switch-knob:before {
+  content: attr(data-on);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: gold;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.switch-toggle input:checked + .switch-knob:after {
+  content: attr(data-off);
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.switch-toggle input:checked + .switch-knob:before,
+.switch-toggle input:checked + .switch-knob:after {
+  opacity: 1;
+}
+
+/* John Cena */
+.dark {
+  background-color: #000;
+  background-image: url("https://1.bp.blogspot.com/-WoVTEjNcDSA/XjniPJ5WxXI/AAAAAAAAfeY/si_GSpZlqqgfZp0khv0C2vMHzNk2-sX6QCLcBGAsYHQ/s1600/Dropkick%2B2.gif");
+  background-size: cover;
+  color: white;
+}
+
+.dark .container {
+  display: none;
+}
+
+.dark .navbar {
+  display: none;
+}
+/* John Cena activated */
+.dark .secretbtn {
+  display: block;
+  background-repeat: no-repeat;
+  animation: pulse 2s infinite;
+  background-color: goldenrod;
+  color: #111;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.dark .secretlink {
+  display: block;
+  animation: pulse 2s infinite;
+  background-color: goldenrod;
+  color: #111;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  float: right;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsivibility */
+
+@media only screen and (max-width: 767px) {
+  .dark {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+}
