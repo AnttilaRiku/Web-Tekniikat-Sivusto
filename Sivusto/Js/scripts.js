@@ -50,14 +50,18 @@ form.addEventListener("submit", function(event) {
 
 	let h3 = document.createElement("h3");
 	let p = document.createElement("p");
+	let date = document.createElement("span");
 	let name = document.createElement("nametag");
-	name.textContent = nameInput.value + ": ";
+	name.textContent = nameInput.value + " : ";
+	date.textContent = new Date().toLocaleString() + " : "; 
+	date.classList.add("date"); 
 	p.textContent = note.value;
 
 	if (checkbox.checked) {
 		h3.classList.add("important");
 		p.classList.add("important");
 	}
+	h3.append(date);
 	h3.append(name);
 	messageHistory.append(h3, p, document.createElement("hr"));
 

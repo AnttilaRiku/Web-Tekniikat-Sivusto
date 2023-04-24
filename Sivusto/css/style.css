@@ -63,6 +63,10 @@ h3 {
   color: goldenrod;
 }
 
+.date {
+  font-size: 14px;
+}
+
 /* important message*/
 
 .important {
