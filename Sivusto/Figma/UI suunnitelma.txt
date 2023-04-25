@@ -3,6 +3,7 @@ Sivuston teema:
 - Nyrkkeilymatsin "promo"sivusto
 - Indexissä kaksi tappelijaa vastakkain ja kommenttisektiossa fanit voi kommentoida kumpi tappelija on parempi. 
 - Väriteemaltaan sivusto käyttää Joko #111, Goldenrod, Gold, Black tai White. 
+- Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; Toimii fonttina
 - Sivustolla yllärivipu, joka yllättää sen vetäjän
 - Sivuston tekstit ovat promotekstejä (mauttomia sellaisia) ja fontiltaan / väriltään ja kaikilta tyyleiltään sivusto tavoittelee 
   Pirkka Las Vegas -tyylistä glamouria
